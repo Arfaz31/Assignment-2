@@ -46,8 +46,6 @@ Header section
   text-decoration: none;
 }
 
-.banner {
-}
 
 .banner-info {
   display: flex;
@@ -484,18 +482,10 @@ Footer-section
   padding: 50px;
 }
 
-.header{
-  display: none;
-}
+/* --------------
+End Style section
 
-
-
-
-
-
-
-
-
+----------------*/
 
 
 
@@ -709,7 +699,45 @@ Media Query section
 }
 
 
+.banner-image img {
+  width: 340px;
+  height: 230px;
+}
+.header {
+  height: 1100px;
+}
 
+.nav {
+ flex-direction: column;
+  padding: 40px 50px;
+}
+
+.nav-title{
+  font-size: 40px;
+}
+.nav ul{
+  position: relative;
+  right: 0px;
+  top: 20px;
+  gap: 25px;
+  flex-direction: column;
+}
+.nav ul li{
+  background-color: #ff900e;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.banner-title-1, .banner-title-2{
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.banner-description{
+  margin: 0px 0px 30px 0px;
+  width: 300px;
 
 }
 
+
+}
