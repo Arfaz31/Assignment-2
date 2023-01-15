@@ -139,14 +139,18 @@ Header section
   margin-bottom: 2px;
 }
 
-.our-info-title-1 span {
+.our-info-title-1 {
+  margin-bottom: 20px;
+  width: 370px;
+}
+.our-info-title-1 .span-1 {
   color: #131313;
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
 }
 
-.our-info-title-2 {
+.our-info-title-1 .sp-2 {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
@@ -180,23 +184,18 @@ Features you will love & enjoy STYLES
   top: 105px;
 }
 .experience-infos {
-  
+  position: relative;
+  bottom: 20px;
 }
 .experience-detail-title-1 {
+  width: 385px;
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
   color: #131313;
   margin-bottom: 3px;
   margin-left: 18px;
-}
-.experience-detail-title-2 {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 53px;
-  color: #131313;
   margin-bottom: 20px;
-  margin-left: 18px;
 }
 
 .experience-detail-description {
@@ -209,7 +208,7 @@ Features you will love & enjoy STYLES
 }
 .experience-infos .info {
   width: 586px;
-  height: 120px;
+  height: 110px;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -257,26 +256,23 @@ Features you will love & enjoy STYLES
   right: 60px;
 }
 
-
-.btn-span{
+.btn-span {
   font-size: 25px;
   font-weight: 300;
-
 }
-
-
-
 
 /* ----------------
 Some Facts styles
 -------------*/
 
-.some-facts{
+.some-facts {
   margin-top: 40px;
   margin-left: 120px;
+
+  margin-bottom: 80px;
 }
 
-.fact-title{
+.fact-title {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
@@ -284,10 +280,436 @@ Some Facts styles
   margin-bottom: 25px;
 }
 
-.fact-description{
+.fact-description {
+  width: 557px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px; 
+  line-height: 26px;
   color: #727272;
   margin-bottom: 80px;
 }
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 0px 130px;
+  margin-left: 30px;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 250.83px;
+  height: 250.83px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 45px 20px 10px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 42px;
+  height: 42px;
+}
+
+.box .logo {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.content .result-number {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #424242;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.content .award-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #727272;
+}
+
+.info-container .box:nth-child(1) .logo {
+  box-shadow: 0 0 0 0 #fe9bd6;
+  background: #fe9bd6;
+}
+
+.info-container .box:nth-child(1):hover .logo {
+  box-shadow: 0 0 0 200px #fe9bd6;
+}
+.info-container .box:nth-child(2) .logo {
+  box-shadow: 0 0 0 0 #23e629;
+  background: #23e629;
+}
+
+.info-container .box:nth-child(2):hover .logo {
+  box-shadow: 0 0 0 200px #23e629;
+}
+.info-container .box:nth-child(3) .logo {
+  box-shadow: 0 0 0 0 #2196f3;
+  background: #2196f3;
+}
+
+.info-container .box:nth-child(3):hover .logo {
+  box-shadow: 0 0 0 200px #2196f3;
+}
+.info-container .box:nth-child(4) .logo {
+  box-shadow: 0 0 0 0 #ffff00;
+  background: #ffff00;
+}
+
+.info-container .box:nth-child(4):hover .logo {
+  box-shadow: 0 0 0 200px #ffff00;
+}
+
+.info-container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* -------------
+ Get A Quote styles
+--------------*/
+
+.quote {
+  background-image: url(../images/image-card/quote.jpg);
+  background-repeat: no-repeat;
+  height: 1110px;
+  position: relative;
+  left: 50px;
+}
+
+.details {
+  text-align: center;
+  height: 465px;
+  width: 600px;
+  background-color: #23e629;
+  color: white;
+  position: relative;
+  top: 291px;
+  left: 260px;
+}
+
+.details .input {
+  height: 55px;
+  width: 230px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.quote-title {
+  padding-top: 55px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.details textarea {
+  border: none;
+  margin: 18px 20px 0px 0px;
+  height: 85px;
+  width: 500px;
+  padding: 35px 0px 0px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ------------------
+Our Sponsors
+------------------*/
+.sponsors-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sponsors-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+
+.sponsors-description {
+  width: 590px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.sponsors-icon {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+/* \
+Footer-section
+ */
+
+.footer {
+  width: 1500px;
+  height: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #424242;
+  background: #fff4e7;
+  border-radius: 8px;
+  margin: 50px 225px;
+}
+
+.footer-info {
+  padding: 50px;
+}
+
+.header{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------
+Media Query section
+-------------------------*/
+@media screen and (max-width: 576px) {
+  .our-feature-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .our-image {
+    margin-left: 10px;
+    grid-column-gap: 3px;
+    grid-row-gap: 10px;
+  }
+  .our-image img {
+    height: 100%;
+    width: 95%;
+    border-radius: 4px;
+  }
+  .our-info {
+    margin: 0px 0px 0px 20px;
+    right: 0px;
+    top: 0px;
+  }
+  .our-info-title-1 {
+    margin-bottom: 15px;
+  }
+  .our-info-title-1,
+  .span-1,
+  .sp-2 {
+    font-size: 40px;
+  }
+
+  .our-info-description {
+    margin-right: 60px;
+    margin-bottom: 25px;
+  }
+
+  .experience-detail-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .experience-infos {
+    bottom: 65px;
+    margin-left: 15px;
+  }
+  .experience-infos .vertical {
+    height: 160px;
+    top: 160px;
+  }
+  .experience-detail-title-1 {
+    width: 312px;
+    margin-left: 25px;
+    font-size: 40px;
+  }
+  .experience-detail-description {
+    margin-right: 78px;
+  }
+
+  .experience-infos .info {
+    width: 310px;
+    height: 110px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .info-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .info-description {
+    font-size: 11px;
+    line-height: 22px;
+  }
+
+  .experience-image {
+    margin-left: 9px;
+    position: relative;
+    bottom: 40px;
+  }
+  .experience-image img {
+    width: 355px;
+    height: 485px;
+    border-radius: 6px;
+  }
+  .experience-image .year-no {
+    width: 140px;
+    height: 90px;
+    border-radius: 5px;
+    font-size: 30px;
+    padding-top: 15px;
+    line-height: 25px;
+    bottom: 65px;
+    right: 0px;
+  }
+
+  .btn-span {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .some-facts {
+    margin-top: 25px;
+    margin-left: 25px;
+    
+}
+.fact-title {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.fact-description {
+  width: 304px;
+  font-size: 16px;
+  line-height: 25px;
+  
+}
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  margin-left: 35px;
+  grid-row-gap: 25px;
+  padding: 0px;
+}
+
+
+.sponsors-title {
+  margin-top: 40px;
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 48px;
+ 
+}
+
+.sponsors-description {
+  width: 346px;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+
+
+.sponsors-icon {
+  flex-direction: column;
+  gap: 30px;
+  height: 80px;
+  width: 100px;
+  align-items: center;
+  margin-left: 135px;
+  margin-top: 120px;
+}
+
+.footer {
+  width: 386px;
+  height: 169px;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 335px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.quote {
+  background-image: none;
+  height: 623px;
+}
+
+.details {
+  background-image: none;
+  height: 554px;
+  width: 304px;
+  left: auto;
+  right: 15px;
+  top: 0px;
+  
+}
+
+.quote-title {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.details .input {
+  height: 50px;
+  width: 230px;
+  border-radius: 5px;
+  padding-left: 18px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+
+.details textarea {
+  border: none;
+  margin: 0px;
+  height: 90px;
+  width: 227px;
+  padding: 15px 0px 0px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+
+}
+
